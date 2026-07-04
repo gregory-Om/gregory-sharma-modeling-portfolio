@@ -1,0 +1,82 @@
+---
+layout: gallery
+title: Gregory Sharma - Portfolio
+permalink: /projects/
+---
+
+<div class="gallery-page">
+
+  <div class="gallery-hero">
+    <p class="gallery-eyebrow">Visual Work</p>
+    <h1 class="gallery-heading">Portfolio</h1>
+    <div class="gallery-rule"></div>
+  </div>
+
+  <div class="gallery-section">
+    <div class="gallery-section-header">
+      <span class="gallery-section-role">Editorial Model</span>
+              <div class="gallery-section-title">Cornell Fashion Collective (Magazine)</div> 
+    <div class="gallery-grid thin-center">
+      <img src="{{ "/assets/images/3M6A8551cropped.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img2">
+      <img src="{{ "/assets/images/EliBrownCFC-149cropped.jpg" | relative_url }}" alt="Fashion Collective 3" class="gallery-img3">
+      <img src="{{ "/assets/images/3M6A5427croopedetc.jpg" | relative_url }}" alt="Fashion Collective 2" class="gallery-img25">
+    </div>
+  </div>
+
+
+  <div class="gallery-section">
+    <div class="gallery-section-header">
+        <div class="gallery-section-title">Recent Photoshoot</div> 
+    <div class="gallery-grid">
+      <img src="{{ "/assets/images/DSC04614ecropped.jpg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04652ecropped.jpg" | relative_url }}" alt="Thread Magazine 2" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04637ecropped2.jpg" | relative_url }}" alt="Thread Magazine 3" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04669ecropped.jpg" | relative_url }}" alt="Thread Magazine 4" class="gallery-img">
+    </div>
+  </div>
+
+
+  <div class="gallery-section">
+    <div class="gallery-section-header">
+      <span class="gallery-section-role">Runway Model</span>
+        <div class="gallery-section-title">Cornell Fashion Collective (Runway)</div> 
+    <div class="gallery-grid">
+      <img src="{{ "/assets/images/MRM06887ed.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img4">
+      <img src="{{ "/assets/images/1O4A3821cropped.jpg" | relative_url }}" alt="Fashion Collective 3" class="gallery-img4">
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <div class="gallery-section-header">
+      <span class="gallery-section-role">Editorial Model</span>
+        <div class="gallery-section-title">Cornell University Thread Magazine</div> 
+    <div class="gallery-grid">
+      <img src="{{ "/assets/images/DSC_0633crop.jpeg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img6">
+      <img src="{{ "/assets/images/DSC2.jpeg" | relative_url }}" alt="Thread Magazine 2" class="gallery-img5">
+      <img src="{{ "/assets/images/IMG_8179cropped.jpg" | relative_url }}" alt="Thread Magazine 3" class="gallery-img6">
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <div class="gallery-section-header">
+      <span class="gallery-section-role">Promotional Model</span>
+  <div class="gallery-section-title">Exotic Minds</div> 
+    </div>
+    <div class="gallery-grid">
+      <img src="{{ "/assets/images/IMG_2217ed.jpeg" | relative_url }}" alt="Exomatic Minds 1" class="gallery-img8">
+            <img src="{{ "/assets/images/IMG_2214blue.jpeg" | relative_url }}" alt="Exomatic Minds 3" class="gallery-img7">
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <div class="gallery-section-header">
+  <div class="gallery-section-title">Extras</div> 
+    </div>
+    <div class="gallery-grid">
+      <img src="{{ "/assets/images/IMG_7089cropped.jpg" | relative_url }}" alt="Extras 1" class="gallery-img9">
+      <img src="{{ "/assets/images/P1010370cropped.jpeg" | relative_url }}" alt="Extras 2" class="gallery-img10">
+            <img src="{{ "/assets/images/DSC01954croppeddone.jpg" | relative_url }}" alt="Extras 3" class="gallery-img11">
+    </div>
+  </div>
+
+</div>
