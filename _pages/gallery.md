@@ -63,8 +63,8 @@ permalink: /projects/
   <div class="gallery-section-title">Exotic Minds</div> 
     </div>
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/IMG_2217edex.jpeg" | relative_url }}" alt="Exomatic Minds 1" class="gallery-img8">
-            <img src="{{ "/assets/images/IMG_2214blueex.jpeg" | relative_url }}" alt="Exomatic Minds 3" class="gallery-img7">
+      <img src="{{ "/assets/images/IMG_2217edlowerex.jpg" | relative_url }}" alt="Exomatic Minds 1" class="gallery-img8">
+            <img src="{{ "/assets/images/IMG_2214blueex.jpg" | relative_url }}" alt="Exomatic Minds 3" class="gallery-img7">
     </div>
   </div>
 
