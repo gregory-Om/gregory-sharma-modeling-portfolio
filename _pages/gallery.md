@@ -74,8 +74,8 @@ permalink: /projects/
     </div>
     <div class="gallery-grid">
       <img src="{{ "/assets/images/IMG_7089cropped.jpg" | relative_url }}" alt="Extras 1" class="gallery-img9">
-      <img src="{{ "/assets/images/P1010370cropped.jpeg" | relative_url }}" alt="Extras 2" class="gallery-img10">
-            <img src="{{ "/assets/images/DSC01954croppeddone.jpg" | relative_url }}" alt="Extras 3" class="gallery-img11">
+      <img src="{{ "/assets/images/P1010370croppedex.jpg" | relative_url }}" alt="Extras 2" class="gallery-img10">
+            <img src="{{ "/assets/images/DSC01954croppeddoneex.jpg" | relative_url }}" alt="Extras 3" class="gallery-img11">
     </div>
   </div>
 
