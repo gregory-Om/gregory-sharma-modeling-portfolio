@@ -1105,16 +1105,19 @@ footer {
   .gallery-img9,
   .gallery-img10,
   .gallery-img11 {
-    height: auto !important;
-    max-height: none !important;
+    display: block !important;
     width: 100% !important;
+    height: auto !important;
     max-width: 100% !important;
-    object-fit: contain !important;
-    object-position: center !important;
+    max-height: none !important;
+    object-fit: unset !important;
+    object-position: unset !important;
+    aspect-ratio: auto !important;
   }
 
   .gallery-page {
     padding: 24px !important;
+    overflow: visible !important;
   }
 }
 
