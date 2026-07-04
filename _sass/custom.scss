@@ -1089,8 +1089,8 @@ footer {
 @media (max-width: 768px) {
   .gallery-grid:not(.thin-center),
   .gallery-grid.thin-center {
-    grid-template-columns: 1fr !important; // single column, stacked
-    gap: 16px;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
   }
 
   .gallery-img,
@@ -1105,15 +1105,16 @@ footer {
   .gallery-img9,
   .gallery-img10,
   .gallery-img11 {
-    height: auto;
-    max-height: none;
-    max-width: 100%;
-    object-fit: contain; // show the full image, no cropping
-    object-position: center;
+    height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
   }
 
   .gallery-page {
-    padding: 24px;
+    padding: 24px !important;
   }
 }
 
