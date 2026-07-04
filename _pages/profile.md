@@ -102,7 +102,7 @@ permalink: /profile/
 
     <div class="experience-item-alt">
       <div class="experience-img-wrap">
-        <img src="{{ "/assets/images/IMG_2217ed.jpeg" | relative_url }}" alt="Exomatic Minds" class="experience-img3">
+        <img src="{{ "/assets/images/IMG_2217edex.jpg" | relative_url }}" alt="Exomatic Minds" class="experience-img3">
       </div>
       <div class="experience-text">
         <div class="experience-header">

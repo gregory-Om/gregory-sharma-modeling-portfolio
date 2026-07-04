@@ -28,10 +28,10 @@ permalink: /projects/
     <div class="gallery-section-header">
         <div class="gallery-section-title">Recent Photoshoot</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/DSC04614ecropped.jpg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img">
-      <img src="{{ "/assets/images/DSC04652ecropped.jpg" | relative_url }}" alt="Thread Magazine 2" class="gallery-img">
-      <img src="{{ "/assets/images/DSC04637ecropped2.jpg" | relative_url }}" alt="Thread Magazine 3" class="gallery-img">
-      <img src="{{ "/assets/images/DSC04669ecropped.jpg" | relative_url }}" alt="Thread Magazine 4" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04614ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04652ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04637ecropped2.jpg" | relative_url }}" alt="photo" class="gallery-img">
+      <img src="{{ "/assets/images/DSC04669ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img">
     </div>
   </div>
 
@@ -53,7 +53,7 @@ permalink: /projects/
     <div class="gallery-grid">
       <img src="{{ "/assets/images/DSC_0633crop.jpeg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img6">
       <img src="{{ "/assets/images/DSC2.jpeg" | relative_url }}" alt="Thread Magazine 2" class="gallery-img5">
-      <img src="{{ "/assets/images/IMG_8179cropped.jpg" | relative_url }}" alt="Thread Magazine 3" class="gallery-img6">
+      <img src="{{ "/assets/images/IMG_8179croppedex.jpg" | relative_url }}" alt="Thread Magazine 3" class="gallery-img6">
     </div>
   </div>
 
@@ -63,8 +63,8 @@ permalink: /projects/
   <div class="gallery-section-title">Exotic Minds</div> 
     </div>
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/IMG_2217ed.jpeg" | relative_url }}" alt="Exomatic Minds 1" class="gallery-img8">
-            <img src="{{ "/assets/images/IMG_2214blue.jpeg" | relative_url }}" alt="Exomatic Minds 3" class="gallery-img7">
+      <img src="{{ "/assets/images/IMG_2217edex.jpeg" | relative_url }}" alt="Exomatic Minds 1" class="gallery-img8">
+            <img src="{{ "/assets/images/IMG_2214blueex.jpeg" | relative_url }}" alt="Exomatic Minds 3" class="gallery-img7">
     </div>
   </div>
 
