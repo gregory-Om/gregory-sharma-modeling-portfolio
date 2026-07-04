@@ -9,7 +9,7 @@ permalink: /profile/
   <div class="profile-hero">
     <div class="profile-hero-inner">
       <div class="profile-photo-wrap">
-        <img src="{{ "/assets/images/DSC04607ecropped.jpg" | relative_url }}" alt="Gregory Sharma" class="profile-photo">
+        <img src="{{ "/assets/images/DSC04607ecropped.JPG" | relative_url }}" alt="Gregory Sharma" class="profile-photo">
       </div>
       <div class="profile-hero-text">
         <p class="profile-eyebrow">Model · San Francisco</p>
@@ -55,7 +55,7 @@ permalink: /profile/
     </div>
   </div>
   <div class="second-photo-wrap">
-            <img src="{{ "/assets/images/DSC01688edit.jpg" | relative_url }}" alt="Gregory Sharma" class="second-photo">
+        <img src="{{ "/assets/images/DSC01688edit.jpg" | relative_url }}" alt="Gregory Sharma" class="second-photo">
   </div>
 
 </div>
