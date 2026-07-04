@@ -55,9 +55,7 @@ permalink: /profile/
     </div>
   </div>
   <div class="second-photo-wrap">
-    <img src="/assets/images/DSC01688edit.jpg"
-         class="second-photo"
-         alt="Profile">
+            <img src="{{ "/assets/images/DSC01688edit.jpg" | relative_url }}" alt="Gregory Sharma" class="second-photo">
   </div>
 
 </div>
