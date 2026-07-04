@@ -9,7 +9,7 @@ permalink: /profile/
   <div class="profile-hero">
     <div class="profile-hero-inner">
       <div class="profile-photo-wrap">
-        <img src="{{ "/assets/images/DSC04607ecropped.JPG" | relative_url }}" alt="Gregory Sharma" class="profile-photo">
+        <img src="{{ "/assets/images/DSC04607ecropped.JPG" | relative_url }}" alt="Gregory Sharma" class="profile-photo" loading="lazy">
       </div>
       <div class="profile-hero-text">
         <p class="profile-eyebrow">Model · San Francisco</p>
@@ -55,7 +55,7 @@ permalink: /profile/
     </div>
   </div>
   <div class="second-photo-wrap">
-        <img src="{{ "/assets/images/DSC01688editlower.jpg" | relative_url }}" alt="Gregory Sharma" class="second-photo">
+        <img src="{{ "/assets/images/DSC01688editlower.jpg" | relative_url }}" alt="Gregory Sharma" class="second-photo"  loading="lazy">
   </div>
 
 </div>
@@ -66,7 +66,7 @@ permalink: /profile/
 
     <div class="experience-item-alt">
       <div class="experience-img-wrap">
-        <img src="{{ "/assets/images/DSC2.jpeg" | relative_url }}" alt="Thread Magazine" class="experience-img1">
+        <img src="{{ "/assets/images/DSC2.jpeg" | relative_url }}" alt="Thread Magazine" class="experience-img1"  loading="lazy">
       </div>
       <div class="experience-text">
         <div class="experience-header">
@@ -84,7 +84,7 @@ permalink: /profile/
 
     <div class="experience-item-alt reverse">
       <div class="experience-img-wrap2">
-        <img src="{{ "/assets/images/IMG_4010cropped.jpg" | relative_url }}" alt="Cornell Fashion Collective" class="experience-img2">
+        <img src="{{ "/assets/images/IMG_4010cropped.jpg" | relative_url }}" alt="Cornell Fashion Collective" class="experience-img2"  loading="lazy">
       </div>
       <div class="experience-text">
         <div class="experience-header">
@@ -102,7 +102,7 @@ permalink: /profile/
 
     <div class="experience-item-alt">
       <div class="experience-img-wrap">
-        <img src="{{ "/assets/images/IMG_2217edlowerex.jpg" | relative_url }}" alt="Exomatic Minds" class="experience-img3">
+        <img src="{{ "/assets/images/IMG_2217edlowerex.jpg" | relative_url }}" alt="Exomatic Minds" class="experience-img3" loading="lazy">
       </div>
       <div class="experience-text">
         <div class="experience-header">
