@@ -1087,38 +1087,29 @@ footer {
 
 //phone fix
 @media (max-width: 768px) {
-  .gallery-grid:not(.thin-center) {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
+  .gallery-grid:not(.thin-center),
   .gallery-grid.thin-center {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr !important; // single column, stacked
+    gap: 16px;
   }
 
   .gallery-img,
   .gallery-img2,
   .gallery-img25,
+  .gallery-img3,
+  .gallery-img4,
   .gallery-img5,
   .gallery-img6,
+  .gallery-img7,
+  .gallery-img8,
   .gallery-img9,
   .gallery-img10,
   .gallery-img11 {
-    height: 200px;
-    object-position: center; // reset to a safer default crop for short mobile boxes
-  }
-
-  .gallery-img3 {
+    height: auto;
+    max-height: none;
     max-width: 100%;
-    height: 200px;
+    object-fit: contain; // show the full image, no cropping
     object-position: center;
-  }
-
-  .gallery-img4,
-  .gallery-img7,
-  .gallery-img8 {
-    height: 260px;
-    object-position: center; // these had aggressive offsets like "center -200px" — too extreme for mobile height
   }
 
   .gallery-page {
