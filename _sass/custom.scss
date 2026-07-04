@@ -227,7 +227,8 @@ footer {
   height: 100%;
   object-fit: cover;
   object-position: center 50%;
-
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 // Banners on home page:
