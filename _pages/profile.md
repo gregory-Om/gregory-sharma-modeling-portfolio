@@ -84,7 +84,7 @@ permalink: /profile/
 
     <div class="experience-item-alt reverse">
       <div class="experience-img-wrap">
-        <img src="{{ "/assets/images/DSC2.jpeg" | relative_url }}" alt="Thread Magazine" class="experience-img1"  loading="lazy">
+        <img src="{{ "/assets/images/DSC2.jpg" | relative_url }}" alt="photo" class="experience-img1"  loading="lazy">
       </div>
       <div class="experience-text">
         <div class="experience-header">

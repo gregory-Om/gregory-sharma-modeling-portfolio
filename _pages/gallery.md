@@ -50,8 +50,8 @@ permalink: /projects/
       <span class="gallery-section-role">Editorial Model</span>
         <div class="gallery-section-title">Cornell University Thread Magazine</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/DSC_0633crop.jpeg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img6" loading="lazy">
-      <img src="{{ "/assets/images/DSC2.jpeg" | relative_url }}" alt="Thread Magazine 2" class="gallery-img5" loading="lazy">
+      <img src="{{ "/assets/images/DSC_0633crop.jpg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img6" loading="lazy">
+      <img src="{{ "/assets/images/DSC2.jpg" | relative_url }}" alt="Thread Magazine 2" class="gallery-img5" loading="lazy">
       <img src="{{ "/assets/images/IMG_8179croppedex.jpg" | relative_url }}" alt="Thread Magazine 3" class="gallery-img6" loading="lazy">
     </div>
   </div>
