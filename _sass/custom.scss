@@ -11,24 +11,145 @@
   font-display: swap;
 }
 
-// Color Variables
-$nice-red: #632125;
-$crimson: #611A38;
-$kite: #381E1F;
-$soft-black: #2B2E35;
-$smokey-black: #11120D;
-$angst: #0A0A0A;
-$nice-white: #FEFFFF;
-$floral-white: #FFFAF4;
-$olive: #808E6D;
-$olive-drab: #565448;
-$indigo: #4B2743;
-$bone: #D8CFBD;
-$gold-tint: #c9a96e;
+// COLOR PALETTE  =====================================================
 
-$primary-color: #565448;
-$background-color: $smokey-black;
-$text-color: #D8CFBD;
+/* DARK THEME
+// --- Global / Base ---
+$color-body-bg:              #11120D;  // <body> background
+$color-body-text:            #D8CFBD;  // <body> default text color (a.k.a. "bone")
+$color-link:                 $color-body-text;  // default <a> link color (shares body text color)
+$color-link-hover:           #611A38;  // <a> hover color (site-wide)
+$accented-darker-text:       #C9A96E;  // shared gold accent used across profile, gallery, footer
+$color-banner-hover-border:  #381e30;  // .banner-card top border (hover state)
+$color-profile-header-bg:    rgba(10, 10, 10, 0.95);  // .page-profile header background
+$color-gallery-header-bg:    rgba(10, 10, 10, 0.85);  // .page-gallery header background
+
+// --- Shared derived tones ---
+$color-border-subtle:        rgba($color-body-text, 0.08);  // footer top border, .experience-item bottom border
+$color-border-default:       rgba($color-body-text, 0.5);   // profile-grid, stat-item, stat-image, experience-section, experience-item-alt, gallery-section borders
+$color-text-muted-strong:    rgba($color-body-text, 0.8);   // profile-block-label, experience-title (default), experience-desc
+*/
+
+// LIGHT THEME
+// --- Global / Base ---
+$color-body-bg:              #D8CFBD;  // <body> background
+$color-body-text:            #471D1F;  // <body> default text color (a.k.a. "bone")
+$color-link:                 $color-body-text;  // default <a> link color (shares body text color)
+$color-link-hover:           #381e30;  // <a> hover color (site-wide)
+$accented-darker-text:       #32191D;  // shared gold accent used across profile, gallery, footer
+$color-banner-hover-border:  #381e30;  // .banner-card top border (hover state)
+$color-profile-header-bg:    #D8CFBD80;  // .page-profile header background
+$color-gallery-header-bg:    #D8CFBD80;  // .page-gallery header background
+
+// --- Shared derived tones ---
+$color-border-subtle:        rgba($color-body-text, 0.08);  // footer top border, .experience-item bottom border
+$color-border-default:       rgba($color-body-text, 0.5);   // profile-grid, stat-item, stat-image, experience-section, experience-item-alt, gallery-section borders
+$color-text-muted-strong:    rgba($color-body-text, 0.8);   // profile-block-label, experience-title (default), experience-desc
+
+
+// Color Uses  =====================================================
+// --- Home page banners ---
+$color-banner-bg:            #11120D;  // .banner-card background
+$color-banner-border:        #11120D;  // .banner-card top border (default state)
+$color-banner-label:         #D8CFBD;  // .banner-label text
+$color-banner-arrow:         $color-body-text;  // .banner-arrow text
+$title-color:                #D8CFBD;  // .intro-text h1 text
+// --- Hero scroll arrow ---
+$color-scroll-arrow:         rgba(255, 255, 255, 0.6);  // .scroll-arrow
+
+// --- Profile page: hero/header ---
+$color-profile-eyebrow:      $accented-darker-text;  // .profile-eyebrow text
+$color-profile-heading:      $color-body-text;  // .profile-heading text
+$color-profile-rule:         $accented-darker-text;  // .profile-rule divider line
+$color-profile-bio-text:     rgba($color-body-text, 0.9);  // .profile-bio paragraph text
+$color-profile-header-text:  $color-body-text;  // .page-profile header text (nav links, logo)
+
+// --- Gallery/Portfolio page: header ---
+$color-gallery-header-text:  $color-body-text;  // .page-gallery header text (nav links, logo)
+
+// --- Gallery/Portfolio footer:
+$color-footer-bg: $color-body-bg;  // footer background
+
+// --- Profile page: info grid ---
+$color-profile-grid-border:      $color-border-default;   // .profile-grid top border
+$color-profile-block-label:      $color-text-muted-strong;   // .profile-block-label text
+$color-profile-detail:           $color-body-text;             // .profile-detail text
+$color-profile-detail-link:      $color-body-text;                    // .profile-detail-link text (default)
+$color-profile-detail-link-hover:$accented-darker-text;                    // .profile-detail-link text (hover)
+
+// --- Profile page: stats ---
+$color-stat-item-border:     $color-border-default;  // .stat-item border
+$color-stat-val:             $color-body-text;                   // .stat-val text
+$color-stat-label:           rgba($color-body-text, 0.7);  // .stat-label text
+$color-stat-image-border:    $color-border-default;  // .stat-image border
+
+// --- Profile page: tags ---
+$color-profile-tag-border:   rgba($accented-darker-text, 0.35);  // .profile-tag border
+$color-profile-tag-text:     $accented-darker-text;                    // .profile-tag text
+
+// --- Profile page: experience list ---
+$color-experience-item-border:       $color-border-subtle;  // .experience-item bottom border
+$color-experience-title:             $color-text-muted-strong;   // .experience-title text (default)
+$color-experience-title-hover:       $color-link-hover;                    // .experience-title text (hover)
+$color-experience-role:              $accented-darker-text;                    // .experience-role text
+$color-experience-desc:              $color-text-muted-strong;   // .experience-desc text
+$color-experience-link:              rgba($color-body-text, 0.65);  // .experience-link text (default)
+$color-experience-link-hover:        $accented-darker-text;                    // .experience-link text (hover)
+$color-experience-section-border:    $color-border-default;   // .experience-section top border
+$color-experience-item-alt-border:   $color-border-default;   // .experience-item-alt bottom border
+
+// --- Gallery page ---
+$color-gallery-eyebrow:        $accented-darker-text;                    // .gallery-eyebrow text
+$color-gallery-heading:        $color-body-text;             // .gallery-heading text
+$color-gallery-rule:           $accented-darker-text;                    // .gallery-rule divider line
+$color-gallery-section-border: $color-border-default;   // .gallery-section top border
+$color-gallery-section-role:   $accented-darker-text;                    // .gallery-section-role text
+$color-gallery-section-title:  $color-body-text;             // .gallery-section-title text
+$color-gallery-section-desc:   rgba($color-body-text, 0.45);  // .gallery-section-desc text
+$color-gallery-link:           rgba($color-body-text, 0.4);   // .gallery-link text (default)
+$color-gallery-link-hover:     $accented-darker-text;                    // .gallery-link text (hover)
+
+// --- Buttons ---
+$color-btn-text:             $color-body-text;  // .btn text color
+
+// --- Footer ---
+$footer-bg:                    $color-body-bg;  // footer background
+$color-footer-border:          $color-border-subtle;  // footer top border
+$color-footer-copyright:       $color-body-text;  // .footer-copyright text
+$color-footer-contact-label:   $accented-darker-text;  // .footer-contact-label text
+$color-footer-contact-text:    $color-body-text;  // .footer-contact link/span text (default)
+$color-footer-contact-hover:   $accented-darker-text;  // .footer-contact a text (hover)
+$color-footer-contact-arrow:   $accented-darker-text;  // .footer-contact-arrow icon
+
+// just for home page
+$color-home-footer-copyright:      $color-body-bg;
+$color-home-footer-contact-text:   $color-body-bg;
+$color-home-footer-contact-hover:  #C9A96E;
+$color-home-footer-contact-arrow:  $color-body-bg;
+
+// --- Code highlighting block ---
+$color-highlight-bg:           #2d2d2d;  // .highlight background
+$color-highlight-text:         #e0e0e0;  // .highlight default text
+$color-highlight-keyword:      #c792ea;  // .highlight .k
+$color-highlight-builtin:      #82aaff;  // .highlight .nb
+$color-highlight-string:       #c3e88d;  // .highlight .s
+$color-highlight-number:       #f78c6c;  // .highlight .mi
+$color-highlight-comment:      #5c6370;  // .highlight .c
+$color-highlight-punctuation:  #89ddff;  // .highlight .p
+$color-highlight-operator:     #ff5370;  // .highlight .o
+
+// =====================
+// UNUSED COLORS (defined previously but not referenced anywhere)
+// =====================
+// $nice-red:     #632125;
+// $soft-black:   #2B2E35;
+// $angst:        #0A0A0A;
+// $nice-white:   #FEFFFF;
+// $floral-white: #FFFAF4;
+// $olive:        #808E6D;
+// $olive-drab:   #565448;  // note: same hex as $primary-color below
+// $indigo:       #4B2743;
+// $primary-color:#565448;  // note: same hex as $olive-drab above
 
 // Font
 $font-family-base: "Forum", sans-serif;
@@ -39,8 +160,8 @@ $font-family-title: 'Cinzel Decorative', serif;
 body {
   font-family: $font-family-base;
   line-height: 1.6;
-  background-color: $background-color;
-  color: $text-color;
+  background-color: $color-body-bg;
+  color: $color-body-text;
   margin: 0;
   padding: 0;
 
@@ -56,12 +177,12 @@ p {
 
 // Links
 a {
-  color: $text-color;
+  color: $color-link;
   text-decoration: underline;
   transition: color 0.2s;
 
   &:hover {
-    color: $crimson;
+    color: $color-link-hover;
   }
 }
 
@@ -109,7 +230,7 @@ h1 { margin-bottom: 15px; }
 header, footer {
   padding: 10px 50px;
   background: transparent;
-  color: $text-color;
+  color: $color-body-text;
   width: 100%;
 }
 
@@ -128,8 +249,13 @@ header.scrolled {
 }
 
 .page-gallery header {
-  background: rgba(10, 10, 10, 0.85);
+  background: $color-gallery-header-bg !important;
   backdrop-filter: blur(5px);
+}
+
+.page-gallery .navbar-brand,
+.page-gallery .nav-link {
+  color: $color-gallery-header-text !important;
 }
 
 footer {
@@ -141,13 +267,16 @@ footer {
   position: relative;
   z-index: 2;
 
-  background: rgba(10, 10, 10, 0.22);
+  background: $color-footer-bg;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
-  border-top: 1px solid rgba(216, 207, 189, 0.08);
+  border-top: 1px solid $color-footer-border;
 }
 
+.page-home footer {
+  background:  rgba(10, 10, 10, 0.22);
+}
 
 // Hero (base component only)
 .hero {
@@ -196,6 +325,7 @@ footer {
     line-height: 1;
     margin-bottom: 0.2rem;
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.8);
+    color: $title-color;
   }
 
   h3 {
@@ -204,6 +334,7 @@ footer {
     font-size: clamp(3rem, 4vw, 5rem);
     margin-bottom: 1.25rem;
     text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);
+    color: $title-color;
   }
 
   p {
@@ -247,8 +378,8 @@ footer {
 .banner-card {
   width: 100%;
   padding: 25px 48px;
-  background: $smokey-black;
-  border-top: 0.8px solid $smokey-black;
+  background: $color-banner-bg;
+  border-top: 0.8px solid $color-banner-border;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.6;
@@ -258,7 +389,7 @@ footer {
 
 .banner-card:hover {
   transform: translateY(-6px);
-  border-top-color: $kite;
+  border-top-color: $color-banner-hover-border;
   opacity: 1 !important;
 }
 
@@ -273,12 +404,12 @@ footer {
   font-size: 22px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: $bone;
+  color: $color-banner-label;
 }
 
 .banner-arrow {
   font-size: 20px;
-  color: $bone;
+  color: $color-banner-arrow;
   transition: transform 0.3s ease;
 }
 
@@ -336,7 +467,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   font-size: 40px;
-  color: rgba(255, 255, 255, 0.6);
+  color: $color-scroll-arrow;
   animation: bounce 1.5s infinite;
   transition: opacity 0.6s ease;
   z-index: 10;
@@ -357,8 +488,13 @@ footer {
 }
 
 .page-profile header {
-  background: rgba(10, 10, 10, 0.95) !important;
+  background: $color-profile-header-bg !important;
   backdrop-filter: blur(5px);
+}
+
+.page-profile .navbar-brand,
+.page-profile .nav-link {
+  color: $color-profile-header-text !important;
 }
 
 /* bio text */
@@ -406,7 +542,7 @@ footer {
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: $gold-tint;
+  color: $color-profile-eyebrow;
   margin-bottom: 5px;
 }
 
@@ -414,20 +550,20 @@ footer {
   font-family: $font-family-title;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 450;
-  color: $bone;
+  color: $color-profile-heading;
   margin-bottom: 20px;
 }
 
 .profile-rule {
   width: 60px;
   height: 1.5px;
-  background: $gold-tint;
+  background: $color-profile-rule;
   margin: 0 auto 24px;
 }
 
 .profile-bio {
   font-size: 15px;
-  color: rgba(216, 207, 189, 0.9);
+  color: $color-profile-bio-text;
   max-width: 580px;
   margin: 0 auto;
   line-height: 1.8;
@@ -438,7 +574,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 60px;
-  border-top: 0.5px solid rgba(216, 207, 189, 0.5);
+  border-top: 0.5px solid $color-profile-grid-border;
   padding-top: 50px;
 }
 
@@ -458,23 +594,23 @@ footer {
   font-size: 32px !important;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(216, 207, 189, 0.8);
+  color: $color-profile-block-label;
   margin: 0 0 1px;
 }
 
 .profile-detail {
   font-size: 20px;
-  color: $bone;
+  color: $color-profile-detail;
   letter-spacing: 0.03em;
   margin: 0;
 }
 
 .profile-detail-link {
   font-size: 20px;
-  color: $bone;
+  color: $color-profile-detail-link;
   text-decoration: none;
   letter-spacing: 0.03em;
-  &:hover { color: $gold-tint; }
+  &:hover { color: $color-profile-detail-link-hover; }
 }
 
 .stat-grid {
@@ -494,14 +630,14 @@ footer {
   width: 76px;
   height: 76px;
   min-height: 0;
-  border: 0.5px solid rgba(216, 207, 189, 0.5);
+  border: 0.5px solid $color-stat-item-border;
   border-radius: 6px;
 }
 
 .stat-val {
   font-size: 16px;
   font-weight: 600;
-  color: $bone;
+  color: $color-stat-val;
   letter-spacing: 0.04em;
 }
 
@@ -509,7 +645,7 @@ footer {
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(216, 207, 189, 0.7);
+  color: $color-stat-label;
 }
 
 .profile-tags {
@@ -526,8 +662,8 @@ footer {
   text-transform: uppercase;
   padding: 5px 12px;
   border-radius: 100px;
-  border: 0.5px solid rgba(201, 169, 110, 0.35);
-  color: $gold-tint;
+  border: 0.5px solid $color-profile-tag-border;
+  color: $color-profile-tag-text;
 }
 
 .profile-right {
@@ -537,7 +673,7 @@ footer {
 }
 
 .stat-image {
-  border: 0.5px solid rgba(216, 207, 189, 0.5);
+  border: 0.5px solid $color-stat-image-border;
   border-radius: 6px;
   overflow: hidden;
   margin-top: 20px
@@ -552,7 +688,7 @@ footer {
 
 .experience-item {
   padding-bottom: 36px;
-  border-bottom: 0.5px solid rgba(216, 207, 189, 0.08);
+  border-bottom: 0.5px solid $color-experience-item-border;
 
   &:last-child { border-bottom: none; }
 }
@@ -571,24 +707,24 @@ footer {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(216, 207, 189, 0.8);
+  color: $color-experience-title;
   text-decoration: none;
 
-  &:hover { color: $gold-tint; }
+  &:hover { color: $color-experience-title-hover; }
 }
 
 .experience-role {
   font-size: 18px !important;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: $gold-tint;
+  color: $color-experience-role;
   white-space: nowrap;
 }
 
 .experience-desc {
   font-size: 22px !important;
   font-family: $font-family-base;
-  color: rgba(216, 207, 189, 0.8);
+  color: $color-experience-desc;
   margin-bottom: 12px;
   line-height: 1.6;
 }
@@ -603,11 +739,11 @@ footer {
   font-size: 16px !important;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(216, 207, 189, 0.65);
+  color: $color-experience-link;
   text-decoration: none;
   transition: color 0.2s;
 
-  &:hover { color: $gold-tint; }
+  &:hover { color: $color-experience-link-hover; }
 }
 
 @media (max-width: 768px) {
@@ -667,7 +803,7 @@ footer {
 }
 
 .experience-section {
-  border-top: 0.5px solid rgba(216, 207, 189, 0.5);
+  border-top: 0.5px solid $color-experience-section-border;
   padding-top: 1px;
 }
 
@@ -677,7 +813,7 @@ footer {
   align-items: center;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 0.5px solid rgba(216, 207, 189, 0.5);
+  border-bottom: 0.5px solid $color-experience-item-alt-border;
 
   &:last-child {
     border-bottom: none;
@@ -788,7 +924,7 @@ footer {
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: $gold-tint;
+  color: $color-gallery-eyebrow;
   margin-bottom: 12px;
 }
 
@@ -796,7 +932,7 @@ footer {
   font-family: $font-family-title;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 400;
-  color: $bone;
+  color: $color-gallery-heading;
   margin-bottom: 20px;
   letter-spacing: 0.08em;
 }
@@ -804,14 +940,14 @@ footer {
 .gallery-rule {
   width: 60px;
   height: 1.5px;
-  background: $gold-tint;
+  background: $color-gallery-rule;
   margin: 0 auto;
 }
 
 .gallery-section {
   margin-bottom: 30px;
   padding-top: 20px;
-  border-top: 1px solid rgba(216, 207, 189, 0.5);
+  border-top: 1px solid $color-gallery-section-border;
 
   &:first-child {
     border-top: none;
@@ -827,7 +963,7 @@ footer {
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: $gold-tint;
+  color: $color-gallery-section-role;
   display: block;
   margin-bottom: 6px;
 }
@@ -835,7 +971,7 @@ footer {
 .gallery-section-title {
   font-size: 22px;
   font-weight: 600;
-  color: $bone;
+  color: $color-gallery-section-title;
   text-decoration: none;
   letter-spacing: 0.04em;
   display: block;
@@ -844,7 +980,7 @@ footer {
 
 .gallery-section-desc {
   font-size: 13px;
-  color: rgba(216, 207, 189, 0.45);
+  color: $color-gallery-section-desc;
   margin: 0;
   letter-spacing: 0.02em;
 }
@@ -1076,12 +1212,12 @@ footer {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(216, 207, 189, 0.4);
+  color: $color-gallery-link;
   text-decoration: none;
   transition: color 0.2s;
 
   &:hover {
-    color: $gold-tint;
+    color: $color-gallery-link-hover;
   }
 }
 
@@ -1125,7 +1261,7 @@ footer {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  color: $background-color;
+  color: $color-btn-text;
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s;
@@ -1147,8 +1283,28 @@ html {
 
 .footer-copyright {
   font-size: 20px;
-  color: $text-color;
+  color: $color-footer-copyright;
 }
+
+// --- Footer (home page only override) ---
+$color-home-footer-copyright: $color-body-bg; 
+.page-home .footer-copyright {
+  color: $color-home-footer-copyright;
+}
+
+.page-home .footer-contact a,
+.page-home .footer-contact span:not(.footer-contact-arrow) {
+  color: $color-home-footer-contact-text;
+}
+
+.page-home .footer-contact a:hover {
+  color: $color-home-footer-contact-hover;
+}
+
+.page-home .footer-contact-arrow {
+  color: $color-home-footer-contact-arrow;
+}
+
 
 .footer-contact {
   display: flex;
@@ -1161,19 +1317,19 @@ html {
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $gold-tint;
+  color: $color-footer-contact-label;
 }
 
 .footer-contact a,
 .footer-contact span:not(.footer-contact-arrow) {
   font-size: 20px;
-  color: $bone;
+  color: $color-footer-contact-text;
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
 .footer-contact a:hover {
-  color: $gold-tint;
+  color: $color-footer-contact-hover;
 }
 
 @media (max-width: 768px) {
@@ -1191,7 +1347,7 @@ html {
 
 .footer-contact-arrow {
   display: inline-block;
-  color: $gold-tint;
+  color: $color-footer-contact-arrow;
   font-size: 30px;
   margin-left: -20px;
   animation: arrow-bob 1.5s ease-in-out infinite;
@@ -1200,18 +1356,18 @@ html {
 
 // Code Highlighting
 .highlight {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
+  background-color: $color-highlight-bg;
+  color: $color-highlight-text;
   padding: 10px 0;
   margin-bottom: 10px;
   border-radius: 5px;
   overflow-x: auto;
 }
 
-.highlight .k  { color: #c792ea; }
-.highlight .nb { color: #82aaff; }
-.highlight .s  { color: #c3e88d; }
-.highlight .mi { color: #f78c6c; }
-.highlight .c  { color: #5c6370; }
-.highlight .p  { color: #89ddff; }
-.highlight .o  { color: #ff5370; }
+.highlight .k  { color: $color-highlight-keyword; }
+.highlight .nb { color: $color-highlight-builtin; }
+.highlight .s  { color: $color-highlight-string; }
+.highlight .mi { color: $color-highlight-number; }
+.highlight .c  { color: $color-highlight-comment; }
+.highlight .p  { color: $color-highlight-punctuation; }
+.highlight .o  { color: $color-highlight-operator; }
