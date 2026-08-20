@@ -13,7 +13,7 @@ permalink: /profile/
       </div>
       <div class="profile-hero-text">
         <p class="profile-eyebrow">Model · San Francisco</p>
-        <h1 class="profile-heading">GregOry Sharma</h1>
+        <h1 class="profile-heading">gregOry sharma</h1>
         <div class="profile-rule"></div>
         <p class="profile-bio">Racially mixed editorial and runway model based in San Francisco. Featured in print publications, student fashion collectives, and streetwear campaigns. </p>
       </div>
