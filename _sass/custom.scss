@@ -229,8 +229,7 @@ h1 { margin-bottom: 15px; }
 // Header & Footer
 header, footer {
   padding: 10px 50px;
-  background: transparent;
-  color: $color-body-text;
+  background: rgba(10, 10, 10, 0.85);
   width: 100%;
 }
 
@@ -239,11 +238,11 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  background: rgba(10, 10, 10, 0);
-  transition: background 0.3s ease;
+  background: transparent;
 }
 
-header.scrolled {
+header.scrolled,
+header.menu-open {
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(5px);
 }
