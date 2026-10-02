@@ -11,40 +11,66 @@
   font-display: swap;
 }
 
-// COLOR PALETTE  =====================================================
+// =====================================================
+// COLOR PALETTE — THEME SYSTEM
+// =====================================================
+// How this works:
+//   - All theme-dependent colors are now CSS custom properties, not just
+//     Sass variables. Sass variables can only be "baked in" once at build
+//     time, so they can't differ page-by-page in one compiled CSS file.
+//     Custom properties, on the other hand, cascade at runtime, so the
+//     SAME compiled CSS can give different pages different colors.
+//   - :root defines the LIGHT theme (the default — used by any page that
+//     doesn't opt into dark).
+//   - .theme-dark defines the DARK theme. Add the class "theme-dark" to
+//     <body> on any page you want dark (e.g. <body class="page-profile theme-dark">).
+//   - TO TOGGLE a page's theme: just add or remove "theme-dark" from that
+//     page's <body> class in the layout/template. Nothing else needs to change.
+//   - The rest of this file is untouched — all the existing $color-* Sass
+//     variables now simply point at these custom properties, so every
+//     selector below keeps working exactly as before.
 
-/* DARK THEME
-// --- Global / Base ---
-$color-body-bg:              #11120D;  // <body> background
-$color-body-text:            #D8CFBD;  // <body> default text color (a.k.a. "bone")
-$color-link:                 $color-body-text;  // default <a> link color (shares body text color)
-$color-link-hover:           #611A38;  // <a> hover color (site-wide)
-$accented-darker-text:       #C9A96E;  // shared gold accent used across profile, gallery, footer
-$color-banner-hover-border:  #381e30;  // .banner-card top border (hover state)
-$color-profile-header-bg:    rgba(10, 10, 10, 0.95);  // .page-profile header background
-$color-gallery-header-bg:    rgba(10, 10, 10, 0.85);  // .page-gallery header background
+:root {
+  // --- LIGHT THEME (default) ---
+  --color-body-bg:              #D8CFBD;
+  --color-body-text:            #471D1F;
+  --color-body-text-rgb:        71, 29, 31;     // rgb() of --color-body-text, for alpha blends
+  --color-link-hover:           #381e30;
+  --color-accent:                #32191D;
+  --color-accent-rgb:            50, 25, 29;    // rgb() of --color-accent, for alpha blends
+  --color-banner-hover-border:  #381e30;
+  --color-profile-header-bg:    #D8CFBD80;
+  --color-gallery-header-bg:    #D8CFBD80;
+}
+
+.theme-dark {
+  // --- DARK THEME (opt-in via class on <body>) ---
+  --color-body-bg:              #11120D;
+  --color-body-text:            #D8CFBD;
+  --color-body-text-rgb:        216, 207, 189;  // rgb() of --color-body-text, for alpha blends
+  --color-link-hover:           #611A38;
+  --color-accent:                #C9A96E;
+  --color-accent-rgb:            201, 169, 110; // rgb() of --color-accent, for alpha blends
+  --color-banner-hover-border:  #381e30;
+  --color-profile-header-bg:    rgba(10, 10, 10, 0.95);
+  --color-gallery-header-bg:    rgba(10, 10, 10, 0.85);
+}
+
+// --- Sass variables now just read from the custom properties above ---
+// Nothing below this block needs to change when you add/remove themes.
+$color-body-bg:              var(--color-body-bg);
+$color-body-text:             var(--color-body-text);
+$color-link:                  $color-body-text;  // default <a> link color (shares body text color)
+$color-link-hover:            var(--color-link-hover);
+$accented-darker-text:        var(--color-accent);  // shared gold/accent used across profile, gallery, footer
+$color-banner-hover-border:   var(--color-banner-hover-border);  // .banner-card top border (hover state)
+$color-profile-header-bg:     var(--color-profile-header-bg);  // .page-profile header background
+$color-gallery-header-bg:     var(--color-gallery-header-bg);  // .page-gallery header background
 
 // --- Shared derived tones ---
-$color-border-subtle:        rgba($color-body-text, 0.08);  // footer top border, .experience-item bottom border
-$color-border-default:       rgba($color-body-text, 0.5);   // profile-grid, stat-item, stat-image, experience-section, experience-item-alt, gallery-section borders
-$color-text-muted-strong:    rgba($color-body-text, 0.8);   // profile-block-label, experience-title (default), experience-desc
-*/
-
-// LIGHT THEME
-// --- Global / Base ---
-$color-body-bg:              #D8CFBD;  // <body> background
-$color-body-text:            #471D1F;  // <body> default text color (a.k.a. "bone")
-$color-link:                 $color-body-text;  // default <a> link color (shares body text color)
-$color-link-hover:           #381e30;  // <a> hover color (site-wide)
-$accented-darker-text:       #32191D;  // shared gold accent used across profile, gallery, footer
-$color-banner-hover-border:  #381e30;  // .banner-card top border (hover state)
-$color-profile-header-bg:    #D8CFBD80;  // .page-profile header background
-$color-gallery-header-bg:    #D8CFBD80;  // .page-gallery header background
-
-// --- Shared derived tones ---
-$color-border-subtle:        rgba($color-body-text, 0.08);  // footer top border, .experience-item bottom border
-$color-border-default:       rgba($color-body-text, 0.5);   // profile-grid, stat-item, stat-image, experience-section, experience-item-alt, gallery-section borders
-$color-text-muted-strong:    rgba($color-body-text, 0.8);   // profile-block-label, experience-title (default), experience-desc
+$color-border-subtle:        rgba(var(--color-body-text-rgb), 0.08);  // footer top border, .experience-item bottom border
+$color-border-default:       rgba(var(--color-body-text-rgb), 0.5);   // profile-grid, stat-item, stat-image, experience-section, experience-item-alt, gallery-section borders
+$color-text-muted-strong:    rgba(var(--color-body-text-rgb), 0.8);   // profile-block-label, experience-title (default), experience-desc
 
 
 // Color Uses  =====================================================
@@ -61,7 +87,7 @@ $color-scroll-arrow:         rgba(255, 255, 255, 0.6);  // .scroll-arrow
 $color-profile-eyebrow:      $accented-darker-text;  // .profile-eyebrow text
 $color-profile-heading:      $color-body-text;  // .profile-heading text
 $color-profile-rule:         $accented-darker-text;  // .profile-rule divider line
-$color-profile-bio-text:     rgba($color-body-text, 0.9);  // .profile-bio paragraph text
+$color-profile-bio-text:     rgba(var(--color-body-text-rgb), 0.9);  // .profile-bio paragraph text
 $color-profile-header-text:  $color-body-text;  // .page-profile header text (nav links, logo)
 
 // --- Gallery/Portfolio page: header ---
@@ -80,11 +106,11 @@ $color-profile-detail-link-hover:$accented-darker-text;                    // .p
 // --- Profile page: stats ---
 $color-stat-item-border:     $color-border-default;  // .stat-item border
 $color-stat-val:             $color-body-text;                   // .stat-val text
-$color-stat-label:           rgba($color-body-text, 0.7);  // .stat-label text
+$color-stat-label:           rgba(var(--color-body-text-rgb), 0.7);  // .stat-label text
 $color-stat-image-border:    $color-border-default;  // .stat-image border
 
 // --- Profile page: tags ---
-$color-profile-tag-border:   rgba($accented-darker-text, 0.35);  // .profile-tag border
+$color-profile-tag-border:   rgba(var(--color-accent-rgb), 0.35);  // .profile-tag border
 $color-profile-tag-text:     $accented-darker-text;                    // .profile-tag text
 
 // --- Profile page: experience list ---
@@ -93,7 +119,7 @@ $color-experience-title:             $color-text-muted-strong;   // .experience-
 $color-experience-title-hover:       $color-link-hover;                    // .experience-title text (hover)
 $color-experience-role:              $accented-darker-text;                    // .experience-role text
 $color-experience-desc:              $color-text-muted-strong;   // .experience-desc text
-$color-experience-link:              rgba($color-body-text, 0.65);  // .experience-link text (default)
+$color-experience-link:              rgba(var(--color-body-text-rgb), 0.65);  // .experience-link text (default)
 $color-experience-link-hover:        $accented-darker-text;                    // .experience-link text (hover)
 $color-experience-section-border:    $color-border-default;   // .experience-section top border
 $color-experience-item-alt-border:   $color-border-default;   // .experience-item-alt bottom border
@@ -105,8 +131,8 @@ $color-gallery-rule:           $accented-darker-text;                    // .gal
 $color-gallery-section-border: $color-border-default;   // .gallery-section top border
 $color-gallery-section-role:   $accented-darker-text;                    // .gallery-section-role text
 $color-gallery-section-title:  $color-body-text;             // .gallery-section-title text
-$color-gallery-section-desc:   rgba($color-body-text, 0.45);  // .gallery-section-desc text
-$color-gallery-link:           rgba($color-body-text, 0.4);   // .gallery-link text (default)
+$color-gallery-section-desc:   rgba(var(--color-body-text-rgb), 0.45);  // .gallery-section-desc text
+$color-gallery-link:           rgba(var(--color-body-text-rgb), 0.4);   // .gallery-link text (default)
 $color-gallery-link-hover:     $accented-darker-text;                    // .gallery-link text (hover)
 
 // --- Buttons ---
@@ -356,10 +382,12 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 40%;
   will-change: transform;
   transform: translateZ(0);
 }
+
+
 
 // Banners on home page:
 .page-banners {
@@ -784,12 +812,13 @@ footer {
 }
 
 .profile-photo {
-  width: 100%;
+  width: 110%;
   height: auto;
   object-fit: scale-down;
   object-position: top;
   border-radius: 4px;
   display: block;
+  border: 3px solid $color-body-text; 
 }
 
 .second-photo-wrap {
@@ -798,14 +827,14 @@ footer {
 }
 
 .second-photo {
-  width: 100%;
+  width: 110%;
   height: auto;
   object-fit: scale-down;
   object-position: center;
   border-radius: 4px;
   display: block;
+  border: 2px solid $color-body-text;
 }
-
 .profile-hero-text {
   flex: 1;
   padding-top: 20px;
@@ -833,22 +862,26 @@ footer {
   }
 }
 
-.experience-img-wrap {
-  flex-shrink: 0;
-  width: 260px;
-  height: auto; 
-  overflow: hidden; 
-  object-fit: scale-down;
-  border-radius: 4px;
-}
 .experience-img-wrap2 {
   flex-shrink: 0;
-  width: 260px;
+  width: 300px;
   object-fit: scale-down;
   height: auto;
   overflow: hidden; 
   border-radius: 4px;
+    border: 2px solid $color-body-text;
 }
+
+.experience-img-wrap {
+  flex-shrink: 0;
+  width: 380px;
+  height: auto; 
+  overflow: hidden; 
+  object-fit: scale-down;
+  border-radius: 4px;
+      border: 2px solid $color-body-text;
+}
+
 
 .experience-img1 {
   width: 100%;
@@ -875,9 +908,10 @@ footer {
   object-fit: cover;
   object-position: 20% 100%;
   display: block;
-
   transform: scale(1.2);
   transition: transform 0.3s ease;
+      border: 2px solid $color-body-text;
+
 }
 
 .experience-img:hover {
@@ -1037,7 +1071,8 @@ footer {
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  
+      border: 2px solid $color-body-text;
+
   &:hover {
     transform: scale(1.02);
   }
@@ -1052,6 +1087,7 @@ footer {
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   object-position: center -20px;
+    border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1068,6 +1104,7 @@ footer {
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   object-position: center -60px;
+    border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1089,17 +1126,20 @@ footer {
     transform: scale(1.02);
     opacity: 1;
   }
+      border: 2px solid $color-body-text;
+
 }
 
 .gallery-img4 {
   width: 100%;
-  height: 800px;
+  height: 790px;
   object-fit: cover;
   object-position: top;
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   object-position: center -40px;
+    border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1109,13 +1149,14 @@ footer {
 
 .gallery-img5 {
   width: 100%;
-  height: 465px;
+  height: 460px;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   object-position: center -90px;
+    border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1125,7 +1166,7 @@ footer {
 
 .gallery-img6 {
   width: 100%;
-  height: 465px;
+  height: 460px;
   object-fit: cover;
   object-position: top;
   border-radius: 4px;
@@ -1135,17 +1176,19 @@ footer {
     transform: scale(1.02);
     opacity: 1;
   }
+      border: 2px solid $color-body-text;
+
 }
 
 .gallery-img7 {
   width: 100%;
-  height: 640px;
+  height: 650px;
   object-fit: cover;
-  object-position: top;
+  object-position: center -50px;
   border-radius: 4px;
   display: block;
+  border: 2px solid $color-body-text;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  object-position: center -40px;
 
   &:hover {
     transform: scale(1.02);
@@ -1155,13 +1198,13 @@ footer {
 
 .gallery-img8 {
   width: 100%;
-  height: 640px;
+  height: 650px; // matches .gallery-img7
   object-fit: cover;
-  object-position: top;
+  object-position: center; 
   border-radius: 4px;
   display: block;
+  border: 2px solid $color-body-text;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  object-position: center -200px;
 
   &:hover {
     transform: scale(1.02);
@@ -1171,13 +1214,14 @@ footer {
 
 .gallery-img9 {
   width: 100%;
-  height: 500px;
+  height: 490px;
   object-fit: cover;
   object-position: top;
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   object-position: center -30px;
+    border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1192,6 +1236,7 @@ footer {
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1200,14 +1245,14 @@ footer {
 
 .gallery-img11 {
   width: 100%;
-  height: 500px;
+  height: 490px;
   object-fit: cover;
   object-position: top;
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  object-position: center -2px;
-
+  object-position: center;
+  border: 2px solid $color-body-text;
   &:hover {
     transform: scale(1.02);
   }
