@@ -42,9 +42,28 @@ permalink: /profile/
           <span class="stat-val">US 12</span>
           <span class="stat-label">Shoe</span>
         </div>
+        <div class="stat-item">
+          <span class="stat-val">US 12</span>
+          <span class="stat-label">Shoe</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">US 12</span>
+          <span class="stat-label">Shoe</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">US 12</span>
+          <span class="stat-label">Shoe</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">US 12</span>
+          <span class="stat-label">Shoe</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">US 12</span>
+          <span class="stat-label">Shoe</span>
+        </div>
       </div>
     </div>
-
     <div class="profile-block">
       <p class="profile-block-label">Contact</p>
       <a href="mailto:sharma.gregory@gmail.com" class="profile-detail-link">
@@ -68,18 +87,30 @@ permalink: /profile/
       </div>
       <div class="experience-text">
         <div class="experience-header">
-          <a href="https://www.youtube.com/watch?v=Tqh6uBpaqSo" class="experience-title" target="_blank">Cornell Fashion Collective</a>
+          <a href="https://www.youtube.com/watch?v=Tqh6uBpaqSo" class="experience-title" target="_blank">Cornell Fashion Collective Runway Show</a>
           <span class="experience-role">Runway Model</span>
         </div>
         <p class="experience-desc">Runway model for one of the largest student-run fashion shows in the country.</p>
         <div class="experience-links">
-          <a href="https://www.youtube.com/watch?v=FlkolF4dMwY" target="_blank" class="experience-link">42nd Show 2026 ↗</a>
-          <a href="https://www.youtube.com/watch?v=ANsi5BOJ9rM" target="_blank" class="experience-link">40th Show 2024 ↗</a>
-          <a href="https://www.youtube.com/watch?v=0pS1ETZoUC4" target="_blank" class="experience-link">39th Show 2023 ↗</a>
+          <a href="https://www.youtube.com/watch?v=FlkolF4dMwY" target="_blank" class="experience-link">42nd Show 2026</a>
+          <a href="https://www.youtube.com/watch?v=ANsi5BOJ9rM" target="_blank" class="experience-link">40th Show 2024</a>
+          <a href="https://www.youtube.com/watch?v=0pS1ETZoUC4" target="_blank" class="experience-link">39th Show 2023</a>
         </div>
       </div>
     </div>
     <div class="experience-item-alt reverse">
+      <div class="experience-img-wrap">
+        <img src="{{ "/assets/images/3M6A8551cropped.jpg" | relative_url }}" alt="photo" class="experience-img0"  loading="lazy">
+      </div>
+      <div class="experience-text">
+        <div class="experience-header">
+          <a href="https://threadmagazine.framer.website/" class="experience-title" target="_blank">Cornell Fashion Collective Magazine</a>
+          <span class="experience-role">Editorial Model</span>
+        </div>
+        <p class="experience-desc">Featured in photoshoots promoting the work of student designers.</p>
+      </div>
+    </div>
+    <div class="experience-item-alt">
       <div class="experience-img-wrap">
         <img src="{{ "/assets/images/DSC2.jpg" | relative_url }}" alt="photo" class="experience-img1"  loading="lazy">
       </div>
@@ -88,15 +119,15 @@ permalink: /profile/
           <a href="https://threadmagazine.framer.website/" class="experience-title" target="_blank">Cornell University Thread Magazine</a>
           <span class="experience-role">Editorial Model</span>
         </div>
-        <p class="experience-desc">Featured model for Cornell's premier student-run fashion, art, and culture magazine.</p>
+        <p class="experience-desc">Model for Cornell's premier student-run fashion, art, and culture magazine.</p>
         <div class="experience-links">
-          <a href="https://issuu.com/thethreadmagazine/docs/final_final" target="_blank" class="experience-link">Spring 2023 ↗</a>
-          <a href="https://issuu.com/thethreadmagazine/docs/thread_fw25_museum_of_matters" target="_blank" class="experience-link">Fall 2025 ↗</a>
-          <a href="https://issuu.com/thethreadmagazine/docs/thread_ss26_the_sports_magazine" target="_blank" class="experience-link">Spring 2026 ↗</a>
+          <a href="https://issuu.com/thethreadmagazine/docs/final_final" target="_blank" class="experience-link">Spring 2023</a>
+          <a href="https://issuu.com/thethreadmagazine/docs/thread_fw25_museum_of_matters" target="_blank" class="experience-link">Fall 2025</a>
+          <a href="https://issuu.com/thethreadmagazine/docs/thread_ss26_the_sports_magazine" target="_blank" class="experience-link">Spring 2026</a>
         </div>
       </div>
     </div>
-    <div class="experience-item-alt">
+    <div class="experience-item-alt reverse">
       <div class="experience-img-wrap">
         <img src="{{ "/assets/images/IMG_2217edlowerex.jpg" | relative_url }}" alt="Exomatic Minds" class="experience-img3" loading="lazy">
       </div>
@@ -107,7 +138,7 @@ permalink: /profile/
         </div>
         <p class="experience-desc">Promotional model for streetwear clothing brand Exomatic Minds.</p>
         <div class="experience-links">
-          <a href="https://exomaticminds.com/" target="_blank" class="experience-link">Brand Website ↗</a>
+          <a href="https://exomaticminds.com/" target="_blank" class="experience-link">Brand Website</a>
         </div>
       </div>
     </div>

@@ -52,7 +52,7 @@
   --color-accent:                #C9A96E;
   --color-accent-rgb:            201, 169, 110; // rgb() of --color-accent, for alpha blends
   --color-banner-hover-border:  #381e30;
-  --color-profile-header-bg:    rgba(10, 10, 10, 0.95);
+  --color-profile-header-bg:    rgba(10, 10, 10, 0.6);
   --color-gallery-header-bg:    rgba(10, 10, 10, 0.85);
 }
 
@@ -642,8 +642,8 @@ footer {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(72px, 80px));
-  gap: 8px;
+  grid-template-columns: repeat(3, minmax(75px, 100px));  // min for phones, max for desktop
+  gap: 10px;
   justify-content: center;
   margin-left: 8px;
 }
@@ -652,24 +652,29 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2px;
-  padding: 6px;
-  width: 76px;
-  height: 76px;
+  gap: 4px;
+  padding: 8px;
+  width: 100%;            
+  height: auto;           
+  aspect-ratio: 1 / 1;    
   min-height: 0;
   border: 0.5px solid $color-stat-item-border;
   border-radius: 6px;
 }
 
+.stat-val   { font-size: 20px; }
+.stat-label { font-size: 14px; }
+
 .stat-val {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   color: $color-stat-val;
   letter-spacing: 0.04em;
 }
 
 .stat-label {
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: $color-stat-label;
@@ -882,12 +887,21 @@ footer {
       border: 2px solid $color-body-text;
 }
 
+.experience-img0 {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: 100% 70%; // edit
+  display: block;
+  filter: grayscale(15%);
+  transition: filter 0.3s ease;
+}
 
 .experience-img1 {
   width: 100%;
-  height: 100%;
+  height: 475px;
   object-fit: cover;
-  object-position: 50% 100%; // edit
+  object-position: 100% 70%; // edit
   display: block;
   filter: grayscale(15%);
   transition: filter 0.3s ease;
@@ -1056,7 +1070,7 @@ footer {
 
 .gallery-grid.thin-center {
   display: grid;
-  grid-template-columns: 450px 175px 450px;
+  grid-template-columns: 450px 450px;
   justify-content: center;
   gap: 12px;
   margin-bottom: 20px;
@@ -1065,7 +1079,7 @@ footer {
 
 .gallery-img {
   width: 100%;
-  height: 440px;
+  height: 600px;
   object-fit: cover;
   object-position: top;
   border-radius: 4px;
@@ -1105,7 +1119,6 @@ footer {
   transition: transform 0.3s ease, opacity 0.3s ease;
   object-position: center -60px;
     border: 2px solid $color-body-text;
-
   &:hover {
     transform: scale(1.02);
     opacity: 1;
@@ -1131,15 +1144,14 @@ footer {
 }
 
 .gallery-img4 {
-  width: 100%;
-  height: 790px;
+  width: 350px;
+  height: 620px;
   object-fit: cover;
-  object-position: top;
+  object-position: cover;
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  object-position: center -40px;
-    border: 2px solid $color-body-text;
+  border: 2px solid $color-body-text;
 
   &:hover {
     transform: scale(1.02);
@@ -1182,9 +1194,9 @@ footer {
 
 .gallery-img7 {
   width: 100%;
-  height: 650px;
+  height: 600px;
   object-fit: cover;
-  object-position: center -50px;
+  object-position: top;
   border-radius: 4px;
   display: block;
   border: 2px solid $color-body-text;
@@ -1198,7 +1210,7 @@ footer {
 
 .gallery-img8 {
   width: 100%;
-  height: 650px; // matches .gallery-img7
+  height: 600px; // matches .gallery-img7
   object-fit: cover;
   object-position: center; 
   border-radius: 4px;
