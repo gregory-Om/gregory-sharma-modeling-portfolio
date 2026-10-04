@@ -26,6 +26,7 @@ permalink: /projects/
     <div class="gallery-section-header">
         <div class="gallery-section-title">Recent Photoshoot</div> 
     <div class="gallery-grid">
+      <img src="{{ "/assets/images/DSC04607ecropped.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04652ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04637ecropped2.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04669ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
@@ -34,7 +35,6 @@ permalink: /projects/
 
   <div class="gallery-section">
     <div class="gallery-section-header">
-      <span class="gallery-section-role">Runway Model</span>
         <div class="gallery-section-title">Cornell Fashion Collective (Runway)</div> 
     <div class="gallery-grid">
       <img src="{{ "/assets/images/EliBrownCFC-149cropped.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img4" loading="lazy">
@@ -45,7 +45,6 @@ permalink: /projects/
 
   <div class="gallery-section">
     <div class="gallery-section-header">
-      <span class="gallery-section-role">Editorial Model</span>
         <div class="gallery-section-title">Cornell University Thread Magazine</div> 
     <div class="gallery-grid">
       <img src="{{ "/assets/images/DSC_0633crop.jpg" | relative_url }}" alt="Thread Magazine 1" class="gallery-img6" loading="lazy">
@@ -56,7 +55,6 @@ permalink: /projects/
 
   <div class="gallery-section">
     <div class="gallery-section-header">
-      <span class="gallery-section-role">Promotional Model</span>
   <div class="gallery-section-title">Exomatic Minds </div> 
     </div>
   <div class="gallery-grid center-pair">   <!-- changed this line -->
