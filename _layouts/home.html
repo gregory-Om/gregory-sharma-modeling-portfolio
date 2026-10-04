@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollArrow = document.querySelector('.scroll-arrow');
   const navbarNav = document.getElementById('navbarNav');
 
+    const video = document.getElementById('bg-video');
+  if (video) {
+    video.muted = true;
+    video.defaultMuted = true;
+  }
+
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
       header.classList.add("scrolled");
@@ -71,13 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
     </nav>
   </header>
 
+
 <section class="hero">
   <div class="video-wrapper">
-    <video autoplay muted loop playsinline preload="auto" poster="{{ "/assets/images/hero-poster.jpg" | relative_url }}" id="bg-video">
-      <source src="{{ "/assets/videos/bgWalk5.mp4" | relative_url }}" type="video/mp4">
+    <video id="bg-video"
+           autoplay muted loop playsinline
+           preload="metadata"
+           disablepictureinpicture
+           disableremoteplayback
+           poster="{{ "/assets/images/hero-poster.jpg" | relative_url }}">
+      <source src="{{ "/assets/videos/bgWalk6.mp4" | relative_url }}" type="video/mp4">
     </video>
   </div>
-
   <div class="hero-content">
     {{ content }}
   </div>

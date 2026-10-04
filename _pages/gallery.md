@@ -11,7 +11,6 @@ permalink: /projects/
     <div class="gallery-rule"></div>
   </div>
 
-
   <div class="gallery-section">
     <div class="gallery-section-header">
         <div class="gallery-section-title">Updated Digitals</div> 
