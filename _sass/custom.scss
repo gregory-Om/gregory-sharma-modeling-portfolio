@@ -823,6 +823,15 @@ footer {
     border-radius: 4px;
   }
 
+  // Third profile image (Cornell Fashion Collective): show the whole photo,
+  // no cropping at the top
+  .experience-img2 {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+  }
+
   // --- Text sizes ---
   .experience-title,
   .profile-block-label { font-size: 22px !important; letter-spacing: 0.1em; }

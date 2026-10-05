@@ -26,7 +26,7 @@ permalink: /projects/
     <div class="gallery-section-header">
         <div class="gallery-section-title">Recent Photoshoot</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/DSC04607ecropped.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
+      <img src="{{ "/assets/images/DSC04607ecropped.png" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04652ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04637ecropped2.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04669ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
