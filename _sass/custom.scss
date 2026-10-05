@@ -345,6 +345,17 @@ footer {
 .page-gallery {
   .navbar-brand,
   .nav-link { color: $text !important; }
+
+  // dim the links for other pages so the current one stands out
+  .nav-link:not(.active) { opacity: 0.65; }
+  .nav-link:hover        { opacity: 1; }
+}
+
+// --- Current page indicator (all pages) ---
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 
 // =====================
@@ -545,7 +556,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 0%;
+  object-position: 50% 30%;
   display: block;
 }
 
@@ -823,13 +834,11 @@ footer {
     border-radius: 4px;
   }
 
-  // Third profile image (Cornell Fashion Collective): show the whole photo,
-  // no cropping at the top
+  // Third profile image (Cornell Fashion Collective): same size as the
+  // others, but anchored to the top so the top never gets cropped.
+  // Change "top" to "center" or "bottom" (or e.g. "50% 10%") to shift the crop.
   .experience-img2 {
-    aspect-ratio: auto;
-    height: auto;
-    object-fit: contain;
-    object-position: top;
+    object-position: 50% 0%;
   }
 
   // --- Text sizes ---
