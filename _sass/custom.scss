@@ -577,7 +577,7 @@ footer {
   text-transform: uppercase;
   color: $text-muted;
   text-decoration: none;
-  line-height: 1.2;   // add this
+  line-height: 1.2;
 
   &:hover { color: $link-hover; }
 }
@@ -606,10 +606,9 @@ footer {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(var(--color-body-text-rgb), 0.65);
-  text-decoration: none;
-  text-decoration: underline;          // was: none
-  text-underline-offset: 4px;          // space between text and line
-  text-decoration-thickness: 0.5px;      // line weight
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 0.5px;
   transition: color 0.2s;
 
   &:hover { color: $accent; }
@@ -780,4 +779,64 @@ footer {
     padding: 24px !important;
     overflow: visible !important;
   }
+}
+
+// =====================================================
+// MOBILE FIXES — keep this block LAST so it wins over
+// the desktop rules above.
+// =====================================================
+@media (max-width: 768px) {
+  // --- Spacing / centering ---
+  header, footer { padding: 10px 20px; }
+  .hero-content  { padding: 90px 20px 60px; }
+  .profile-page  { padding: 20px; }
+  .profile-hero-text,
+  .experience-text,
+  .profile-details-left { text-align: center; }
+  .experience-links,
+  .profile-block { justify-content: center; align-items: center; }
+  .experience-header { align-items: center; text-align: center; }
+  .stat-grid { margin-left: 0; justify-content: center; }
+
+  // --- Images: fill the frame, no overflow ---
+  .profile-photo,
+  .second-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .profile-photo-wrap,
+  .second-photo-wrap { width: 100%; }
+
+  .experience-img-wrap,
+  .experience-img-wrap2 { border: none; }
+  .experience-img0,
+  .experience-img1,
+  .experience-img2,
+  .experience-img3 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transform: none;
+    border: 2px solid var(--color-body-text);
+    border-radius: 4px;
+  }
+
+  // --- Text sizes ---
+  .experience-title,
+  .profile-block-label { font-size: 22px !important; letter-spacing: 0.1em; }
+  .experience-desc     { font-size: 17px !important; }
+  .experience-role     { font-size: 14px !important; white-space: normal; }
+  .experience-link     { font-size: 14px !important; }
+  .profile-bio,
+  .profile-detail      { font-size: 16px !important; }
+  .stat-val            { font-size: 16px; }
+  .stat-label          { font-size: 11px; }
+  .footer-copyright,
+  .footer-contact a,
+  .footer-contact span:not(.footer-contact-arrow) { font-size: 15px; }
+  .footer-contact-arrow { margin-left: 0; font-size: 22px; }
+  .intro-text p        { font-size: 1.4rem; }
+  .banner-label        { font-size: 18px; }
 }
