@@ -102,7 +102,7 @@ permalink: /profile/
       </div>
       <div class="experience-text">
         <div class="experience-header">
-          <a href="https://threadmagazine.framer.website/" class="experience-title" target="_blank">Cornell Fashion Collective Magazine</a>
+          <a href="https://www.cornellfashioncollective.org/" class="experience-title" target="_blank">Cornell Fashion Collective Lookbook</a>
           <span class="experience-role">Editorial Model</span>
         </div>
         <p class="experience-desc">Featured in photoshoots promoting the work of student designers.</p>

@@ -565,7 +565,7 @@ footer {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   gap: 12px;
 }
 
@@ -577,6 +577,7 @@ footer {
   text-transform: uppercase;
   color: $text-muted;
   text-decoration: none;
+  line-height: 1.2;   // add this
 
   &:hover { color: $link-hover; }
 }
@@ -593,7 +594,7 @@ footer {
   font-size: 22px !important;
   font-family: $font-base;
   color: $text-muted;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   line-height: 1.6;
 }
 
@@ -606,6 +607,9 @@ footer {
   text-transform: uppercase;
   color: rgba(var(--color-body-text-rgb), 0.65);
   text-decoration: none;
+  text-decoration: underline;          // was: none
+  text-underline-offset: 4px;          // space between text and line
+  text-decoration-thickness: 0.5px;      // line weight
   transition: color 0.2s;
 
   &:hover { color: $accent; }
