@@ -8,7 +8,7 @@ permalink: /profile/
   <div class="profile-hero">
     <div class="profile-hero-inner">
       <div class="profile-photo-wrap">
-        <img src="{{ "/assets/images/MMP_0367.JPG" | relative_url }}" alt="Gregory Sharma" class="profile-photo" loading="lazy">
+        <img src="{{ "/assets/images/MMP_0367.jpg" | relative_url }}" alt="Gregory Sharma" class="profile-photo" loading="lazy">
       </div>
       <div class="profile-hero-text">
         <p class="profile-eyebrow">Model · San Francisco</p>
