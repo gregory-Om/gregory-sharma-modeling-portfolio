@@ -79,35 +79,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <section class="hero">
-  <div class="video-wrapper">
-    <video id="bg-video"
-           autoplay muted loop playsinline
-           preload="metadata"
-           disablepictureinpicture
-           disableremoteplayback
-           poster="{{ "/assets/images/hero-poster.jpg" | relative_url }}">
-      <source src="{{ "/assets/videos/bgWalk6-web.mp4" | relative_url }}" type="video/mp4">
-    </video>
-  </div>
-  <div class="hero-content">
-    {{ content }}
-  </div>
 
-<div class="scroll-arrow">
-  <i class="bi bi-chevron-down"></i>
-</div>
+  <!-- Split hero: video + title on the LEFT (wider), photo on the RIGHT.
+       Widths, height and the divider line are controlled in main.scss (.hero-split). -->
+  <div class="hero-split">
+
+    <!-- LEFT: video background with the title text on top -->
+    <div class="hero-video-panel">
+      <div class="video-wrapper">
+        <video id="bg-video"
+               autoplay muted loop playsinline
+               preload="metadata"
+               disablepictureinpicture
+               disableremoteplayback
+               poster="{{ "/assets/images/hero-poster.jpg" | relative_url }}">
+          <source src="{{ "/assets/videos/walk12.mp4" | relative_url }}" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-content">
+        {{ content }}
+      </div>
+
+      <div class="scroll-arrow">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </div>
+
+    <!-- DIVIDER LINE -->
+    <div class="hero-divider" aria-hidden="true"></div>
+
+    <!-- RIGHT: single photo (swap the filename) -->
+    <div class="hero-photo-panel">
+      <img src="{{ "/assets/images/MMP_1016.jpg" | relative_url }}" alt="Gregory Sharma" class="hero-main-photo">
+    </div>
+
+  </div>
 
   <section class="page-banners">
   <a href="{{ "/profile/" | relative_url }}" class="banner-card">
     <div class="banner-inner">
       <span class="banner-label">Profile</span>
-      <span class="banner-arrow">→</span>
     </div>
   </a>
   <a href="{{ "/projects/" | relative_url }}" class="banner-card">
     <div class="banner-inner">
       <span class="banner-label">Portfolio</span>
-      <span class="banner-arrow">→</span>
     </div>
   </a>
 </section>

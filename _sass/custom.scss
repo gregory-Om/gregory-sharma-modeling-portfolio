@@ -3,22 +3,22 @@
 // Light is the default; add "theme-dark" to <body> for dark.
 // =====================================================
 :root {
-  --color-body-bg:           #D8CFBD;
+  --color-body-bg:           #F1EBE7;
   --color-body-text:         #471D1F;
   --color-body-text-rgb:     71, 29, 31;
   --color-link-hover:        #381e30;
   --color-accent:            #32191D;
   --color-accent-rgb:        50, 25, 29;
-  --color-profile-header-bg: #D8CFBD80;
-  --color-gallery-header-bg: #D8CFBD80;
+  --color-profile-header-bg: #F1EBE780;
+  --color-gallery-header-bg: #F1EBE780;
 }
 
 .theme-dark {
   --color-body-bg:           #11120D;
-  --color-body-text:         #D8CFBD;
-  --color-body-text-rgb:     216, 207, 189;
+  --color-body-text:         #C9B5AA;
+  --color-body-text-rgb:     201, 181, 170;
   --color-link-hover:        #611A38;
-  --color-accent:            #C9A96E;
+  --color-accent:            #2222A96E;
   --color-accent-rgb:        201, 169, 110;
   --color-profile-header-bg: rgba(10, 10, 10, 0.6);
   --color-gallery-header-bg: rgba(10, 10, 10, 0.85);
@@ -215,8 +215,10 @@ footer {
     font-size: clamp(4rem, 9vw, 8rem);
     line-height: 1;
     margin-bottom: 0.2rem;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
-    color: #D8CFBD;
+    text-shadow:
+  0 3px 6px rgba(0, 0, 0, 0.8),
+  0 3px 6px rgba(0, 0, 0, 0.8);
+    color: #C9B5AA;
   }
 
   h3 {
@@ -225,7 +227,7 @@ footer {
     font-size: clamp(3rem, 4vw, 5rem);
     margin-bottom: 1.25rem;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
-    color: #D8CFBD;
+    color: #C9B5AA;
   }
 
   p {
@@ -233,6 +235,131 @@ footer {
     margin-bottom: 0.1rem;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
   }
+}
+
+// =====================================================
+// HOME NAV BAR — solid bar across the top (takes up its own space,
+// so the split hero starts below it instead of sitting underneath)
+// =====================================================
+// Dark base behind the whole home hero. The video now only fills the left
+// panel, so the banners and footer need this to keep their old dark look.
+.page-home .hero { background: #11120D; }
+
+.page-home {
+  background-color: #11120D;   
+}
+
+.page-home header {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 10, 10, 0.92) !important;   // <- last number is the opacity
+  backdrop-filter: blur(5px);
+}
+
+// =====================================================
+// SPLIT HERO — video + title (left) | divider | photo (right)
+// Edit the variables below to change widths, height and the line.
+// =====================================================
+.hero-split {
+  --nav-height:      84px;      // height of the nav bar (adjust if the photo sits too high/low)
+  --split-video:     62fr;      // left (video) width share
+  --split-photo:     38fr;      // right (photo) width share
+  --split-height:    150vh;     // total height of the split; bigger = more to scroll through
+  --divider-width:   12px;       // line thickness
+  --divider-color:   #0A0A0A;   // line color (same black as the nav bar)
+  --divider-opacity: 1;         // 0 = invisible, 1 = solid
+
+  display: grid;
+  grid-template-columns: var(--split-video) var(--divider-width) var(--split-photo);
+  min-height: var(--split-height);
+}
+
+.hero-video-panel {
+  position: relative;   // video-wrapper fills THIS panel only
+  overflow: hidden;
+  min-width: 0;
+}
+
+.hero-divider {
+  position: relative;
+  z-index: 2;
+  align-self: stretch;
+  min-width: var(--divider-width);
+  background: var(--divider-color);
+  opacity: var(--divider-opacity);
+}
+
+// The photo fills the whole tall panel, so it is zoomed in (less of the left
+// and right visible) and scrolls with the page, revealing more of the image
+// as you scroll down. A taller --split-height = more zoom and more to reveal.
+.hero-photo-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-main-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;   // top = starts at the top of the photo; try "center 20%" to start lower
+  display: block;
+}
+
+// Title sits centered in the first screen; the rest of the video continues below
+.hero-split .hero-content {
+  min-height: calc(100vh - var(--nav-height));
+  padding: 40px 40px 80px;
+}
+
+.hero-video-panel .scroll-arrow {
+  bottom: auto;
+  top: calc(100vh - var(--nav-height) - 80px);
+}
+.hero-split .intro-text {
+  --title-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 6px 14px rgba(0, 0, 0, 0.8),
+    0 12px 30px rgba(0, 0, 0, 0.6);
+
+  h1 {
+    font-size: clamp(3.5rem, calc(1.5rem + 8vw), 11rem);
+    text-shadow: var(--title-shadow);
+  }
+  h3 {
+    font-size: clamp(2rem, calc(1rem + 4vw), 5.5rem);
+    text-shadow: var(--title-shadow);
+  }
+  p {
+    font-size: clamp(1.4rem, calc(0.9rem + 2.6vw, 3.6rem));
+    text-shadow: var(--title-shadow);
+  }
+}
+
+@media (max-width: 768px) {
+  // Stack: video/title on top, divider, then the photo
+  .hero-split {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto var(--divider-width) auto;
+    min-height: 0;
+  }
+
+  .hero-video-panel { order: 1; }
+  .hero-divider     { order: 2; }
+  .hero-photo-panel { order: 3; aspect-ratio: 4 / 5; }
+
+  .hero-main-photo {
+    position: static;
+    height: 100%;
+  }
+
+  .hero-split .hero-content { min-height: 85vh; padding: 40px 20px 60px; }
+  .hero-video-panel .scroll-arrow { top: auto; bottom: 30px; }
+
+  .hero-split .intro-text h1 { font-size: clamp(3rem, 14vw, 4.75rem); }
+  .hero-split .intro-text h3 { font-size: clamp(1.75rem, 7vw, 2.5rem); }
+  .hero-split .intro-text p  { font-size: 1.4rem; }
 }
 
 .video-wrapper {
@@ -311,7 +438,7 @@ footer {
   font-size: 22px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #D8CFBD;
+  color: #C9B5AA;
 }
 
 .banner-arrow {
@@ -320,7 +447,7 @@ footer {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .page-banners { gap: 1px; }
 }
 
@@ -354,7 +481,7 @@ footer {
 // --- Current page indicator (all pages) ---
 .navbar .nav-link.active {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
 
