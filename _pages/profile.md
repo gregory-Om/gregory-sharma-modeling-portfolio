@@ -25,43 +25,51 @@ permalink: /profile/
       <p class="profile-block-label">Measurements</p>
       <div class="stat-grid">
         <div class="stat-item">
-          <span class="stat-val">6'1"</span>
           <span class="stat-label">Height</span>
+          <span class="stat-val">6'1"</span>
+          <span class="stat-metric">185 cm</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">31"</span>
           <span class="stat-label">Waist</span>
+          <span class="stat-val">31"</span>
+          <span class="stat-metric">79 cm</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">38"</span>
           <span class="stat-label">Chest</span>
+          <span class="stat-val">38"</span>
+          <span class="stat-metric">97 cm</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">US 12</span>
           <span class="stat-label">Shoe</span>
+          <span class="stat-val">US 12</span>
+          <span class="stat-metric">EU 45</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">US 12</span>
-          <span class="stat-label">Shoe</span>
+          <span class="stat-label">Inseam</span>
+          <span class="stat-val">_____</span>
+          <span class="stat-metric">_____ cm</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">US 12</span>
-          <span class="stat-label">Shoe</span>
+          <span class="stat-label">Suit</span>
+          <span class="stat-val">___40R</span>
+          <span class="stat-metric">EU 50</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">US 12</span>
-          <span class="stat-label">Shoe</span>
+          <span class="stat-label">Collar</span>
+          <span class="stat-val">____</span>
+          <span class="stat-metric">____ cm</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">US 12</span>
-          <span class="stat-label">Shoe</span>
+          <span class="stat-label">Hair Color</span>
+          <span class="stat-val">Black</span>
         </div>
         <div class="stat-item">
-          <span class="stat-val">US 12</span>
-          <span class="stat-label">Shoe</span>
+          <span class="stat-label">Eye Color</span>
+          <span class="stat-val">____</span>
         </div>
       </div>
     </div>
+
     <div class="profile-block">
       <p class="profile-block-label">Contact</p>
       <a href="mailto:sharma.gregory@gmail.com" class="profile-detail-link">
@@ -85,7 +93,7 @@ permalink: /profile/
       </div>
       <div class="experience-text">
         <div class="experience-header">
-          <a href="https://www.youtube.com/watch?v=Tqh6uBpaqSo" class="experience-title" target="_blank">Cornell Fashion Collective Runway Show</a>
+          <a href="https://www.youtube.com/watch?v=Tqh6uBpaqSo" class="experience-title" target="_blank">Cornell Fashion Collective Runway</a>
           <span class="experience-role">Runway Model</span>
         </div>
         <p class="experience-desc">Runway model for one of the largest student-run fashion shows in the country.</p>

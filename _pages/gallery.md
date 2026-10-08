@@ -15,7 +15,7 @@ permalink: /projects/
     <div class="gallery-section-header">
         <div class="gallery-section-title">Updated Digitals</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/MMP_0857.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
+      <img src="{{ "/assets/images/MMP_0099.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/MMP_0367.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy" style="object-position: center bottom;">
       <img src="{{ "/assets/images/MMP_0633.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/MMP_0881.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">

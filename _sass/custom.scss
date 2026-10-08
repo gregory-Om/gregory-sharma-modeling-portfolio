@@ -552,7 +552,7 @@ footer {
 }
 
 .profile-bio {
-  font-size: 18px !important;
+  font-size: 22px !important;
   color: rgba(var(--color-body-text-rgb), 0.9);
   max-width: 580px;
   margin: 0 auto;
@@ -613,27 +613,32 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;       
+  text-align: center;
   gap: 4px;
   padding: 8px;
   width: 100%;
   aspect-ratio: 1 / 1;
-  border: 0.5px solid $border;
+  border: 2px solid $text;   
   border-radius: 6px;
 }
 
 .stat-val {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   color: $text;
   letter-spacing: 0.04em;
 }
 
 .stat-label {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(var(--color-body-text-rgb), 0.7);
+  color: $text;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 5px;
+  margin-bottom: 4px;       
 }
 
 // --- Experience ---
@@ -708,7 +713,7 @@ footer {
 }
 
 .experience-title {
-  font-size: 32px !important;
+  font-size: 37px !important;
   font-family: $font-base;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -729,7 +734,7 @@ footer {
 }
 
 .experience-desc {
-  font-size: 22px !important;
+  font-size: 25px !important;
   font-family: $font-base;
   color: $text-muted;
   margin-bottom: 8px;
