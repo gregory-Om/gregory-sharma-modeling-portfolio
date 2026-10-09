@@ -378,6 +378,22 @@ footer {
   transform: translateZ(0);
 }
 
+// Hide the phone's built-in play/pause overlay on the background video
+#bg-video {
+  pointer-events: none;   // taps pass through, so the controls never appear
+}
+
+#bg-video::-webkit-media-controls,
+#bg-video::-webkit-media-controls-panel,
+#bg-video::-webkit-media-controls-play-button,
+#bg-video::-webkit-media-controls-start-playback-button,
+#bg-video::-webkit-media-controls-overlay-play-button,
+#bg-video::-webkit-media-controls-enclosure {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0;
+}
+
 .scroll-arrow {
   position: absolute;
   bottom: 350px;
