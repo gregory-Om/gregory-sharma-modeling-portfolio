@@ -17,11 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   const scrollArrow = document.querySelector('.scroll-arrow');
   const navbarNav = document.getElementById('navbarNav');
-
-    const video = document.getElementById('bg-video');
+  const video = document.getElementById('bg-video');
+  
   if (video) {
     video.muted = true;
     video.defaultMuted = true;
+    video.controls = false;                  // <- add this line
+    video.removeAttribute('controls');       // <- and this line
   }
 
   window.addEventListener("scroll", function () {
@@ -80,22 +82,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <section class="hero">
 
-  <!-- Split hero: video + title on the LEFT (wider), photo on the RIGHT.
-       Widths, height and the divider line are controlled in main.scss (.hero-split). -->
   <div class="hero-split">
-
-    <!-- LEFT: video background with the title text on top -->
-    <div class="hero-video-panel">
-      <div class="video-wrapper">
-        <video id="bg-video"
-               autoplay muted loop playsinline
-               preload="metadata"
-               disablepictureinpicture
-               disableremoteplayback
-               poster="{{ "/assets/images/hero-poster.jpg" | relative_url }}">
-          <source src="{{ "/assets/videos/walk14.mp4" | relative_url }}" type="video/mp4">
-        </video>
-      </div>
+    s<video id="bg-video"
+       autoplay muted loop playsinline webkit-playsinline
+       preload="metadata"
+       disablepictureinpicture
+       disableremoteplayback
+       x-webkit-airplay="deny"
+       controlslist="nodownload nofullscreen noremoteplayback"
+       poster="{{ "/assets/images/hero-poster.jpg" | relative_url }}">
+  <source src="{{ "/assets/videos/walk14.mp4" | relative_url }}" type="video/mp4">
+</video>
 
       <div class="hero-content">
         {{ content }}
