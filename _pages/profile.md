@@ -69,7 +69,6 @@ permalink: /profile/
         </div>
       </div>
     </div>
-
     <div class="profile-block">
       <p class="profile-block-label">Contact</p>
       <a href="mailto:sharma.gregory@gmail.com" class="profile-detail-link">
