@@ -619,7 +619,7 @@ footer {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(75px, 100px));
+  grid-template-columns: repeat(3, minmax(75px, 100px));
   gap: 10px;
   justify-content: center;
   margin-left: 8px;

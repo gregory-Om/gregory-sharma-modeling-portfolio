@@ -36,13 +36,36 @@ permalink: /profile/
         </div>
         <div class="stat-item">
           <span class="stat-label">Chest</span>
-          <span class="stat-val">38__"</span>
+          <span class="stat-val">38"</span>
           <span class="stat-metric">97 cm</span>
         </div>
         <div class="stat-item">
           <span class="stat-label">Shoe</span>
           <span class="stat-val">US 12</span>
           <span class="stat-metric">EU 45</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Inseam</span>
+          <span class="stat-val">32"</span>
+          <span class="stat-metric">82 cm</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Collar</span>
+          <span class="stat-val">16"</span>
+          <span class="stat-metric">40 cm</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Suit</span>
+          <span class="stat-val">38R</span>
+          <span class="stat-metric">48 cm</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Hair Color</span>
+          <span class="stat-val">Black</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Eye Collor</span>
+          <span class="stat-val">Brown</span>
         </div>
       </div>
     </div>
