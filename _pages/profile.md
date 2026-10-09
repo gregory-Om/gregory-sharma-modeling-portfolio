@@ -60,11 +60,6 @@ permalink: /profile/
           <span class="stat-metric">48 cm</span>
         </div>
         <div class="stat-item">
-          <span class="stat-label">Hair</span>
-          <span class="stat-val">Black</span>
-          <span class="stat-metric">_</span>
-        </div>
-        <div class="stat-item">
           <span class="stat-label">Eye</span>
           <span class="stat-val">Brown</span>
           <span class="stat-metric">_</span>
