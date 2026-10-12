@@ -13,8 +13,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Gregory Sharma
 description              : Personal Modeling Website
-baseurl                  : "/gregory-sharma-modeling-portfolio/" # Set this to your repo name 
-url: "https://gregory-om.github.io"
+url: "https://gregorysharma.com" # moving to website
+baseurl                  : "" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal
