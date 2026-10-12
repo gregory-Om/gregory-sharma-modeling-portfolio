@@ -15,10 +15,10 @@ permalink: /projects/
     <div class="gallery-section-header">
         <div class="gallery-section-title">Updated Digitals</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/MMP_0099.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
-      <img src="{{ "/assets/images/MMP_0367.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy" style="object-position: center bottom;">
-      <img src="{{ "/assets/images/MMP_0633.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
-      <img src="{{ "/assets/images/MMP_0881.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
+      <img src="{{ "/assets/images/MMP_0099.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager">
+      <img src="{{ "/assets/images/0001.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager" style="object-position: center bottom;">
+      <img src="{{ "/assets/images/MMP_0633.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager">
+      <img src="{{ "/assets/images/MMP_0881.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager">
     </div>
   </div>
 
@@ -26,7 +26,7 @@ permalink: /projects/
     <div class="gallery-section-header">
         <div class="gallery-section-title">Recent Photoshoot</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/DSC04607ecropped.png" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
+      <img src="{{ "/assets/images/1111.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04652ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04637ecropped2.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
       <img src="{{ "/assets/images/DSC04669ecroppedex.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="lazy">
