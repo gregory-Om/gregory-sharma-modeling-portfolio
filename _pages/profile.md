@@ -68,8 +68,8 @@ permalink: /profile/
     </div>
     <div class="profile-block">
       <p class="profile-block-label">Contact</p>
-      <a href="mailto:sharma.gregory@gmail.com" class="profile-detail-link">
-        sharma.gregory@gmail.com
+      <a href="mailto:gregorysharma0@gmail.com" class="profile-detail-link">
+        gregorysharma0@gmail.com
       </a>
       <p class="profile-detail">+1 (518) 309-8489</p>
     </div>

@@ -74,5 +74,4 @@ permalink: /projects/
             <img src="{{ "/assets/images/3M6A5427croopedetc.jpg" | relative_url }}" alt="Extras 3" class="gallery-img11" loading="lazy">
     </div>
   </div>
-
 </div>

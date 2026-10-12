@@ -35,9 +35,9 @@ a.contact-card::after { display: none; }
 
 <div class="contact-grid">
 
-<a href="mailto:sharma.gregory@gmail.com" class="contact-card">
+<a href="mailto:gregorysharma0@gmail.com" class="contact-card">
 <span class="contact-card-label">Email</span>
-<span class="contact-card-value">sharma.gregory@gmail.com</span>
+<span class="contact-card-value">gregorysharma0@gmail.com</span>
 </a>
 
 <a href="tel:+15183098489" class="contact-card">
