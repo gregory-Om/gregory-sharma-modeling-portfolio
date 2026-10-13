@@ -35,9 +35,14 @@ permalink: /profile/
           <span class="stat-metric">79 cm</span>
         </div>
         <div class="stat-item">
+          <span class="stat-label">Hips</span>
+          <span class="stat-val">39"</span>
+          <span class="stat-metric">99 cm</span>
+        </div>
+        <div class="stat-item">
           <span class="stat-label">Chest</span>
-          <span class="stat-val">38"</span>
-          <span class="stat-metric">97 cm</span>
+          <span class="stat-val">41"</span>
+          <span class="stat-metric">104 cm</span>
         </div>
         <div class="stat-item">
           <span class="stat-label">Shoe</span>
@@ -58,11 +63,6 @@ permalink: /profile/
           <span class="stat-label">Suit</span>
           <span class="stat-val">38R</span>
           <span class="stat-metric">EU 48</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-label">Eye</span>
-          <span class="stat-val">Brown</span>
-          <span class="stat-metric">_</span>
         </div>
       </div>
     </div>
