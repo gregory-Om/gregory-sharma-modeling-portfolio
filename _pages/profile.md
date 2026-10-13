@@ -84,8 +84,11 @@ permalink: /profile/
   <div class="experience-section">
     <p class="profile-block-label" style="margin-bottom: 10px; font-size: 10px; letter-spacing: 0.2em;">Modeling Experience</p>
     <div class="experience-item-alt">
-      <div class="experience-img-wrap2">
-        <img src="{{ "/assets/images/IMG_4010cropped.jpg" | relative_url }}" alt="Cornell Fashion Collective" class="experience-img2"  loading="lazy">
+      <div class="photo-block">
+        <div class="experience-img-wrap2">
+          <img src="{{ "/assets/images/IMG_4010cropped.jpg" | relative_url }}" alt="Cornell Fashion Collective" class="experience-img2"  loading="lazy">
+        </div>
+        <p class="photo-credit">Photo Credit: <a href="https://www.instagram.com/jb1n.archive" target="_blank" rel="noopener">@jb1n.archive</a></p>
       </div>
       <div class="experience-text">
         <div class="experience-header">
@@ -101,9 +104,12 @@ permalink: /profile/
       </div>
     </div>
     <div class="experience-item-alt reverse">
-      <div class="experience-img-wrap">
-        <img src="{{ "/assets/images/3M6A8551cropped.jpg" | relative_url }}" alt="photo" class="experience-img0"  loading="lazy">
-      </div>
+      <div class="photo-block">
+       <div class="experience-img-wrap">
+          <img src="{{ "/assets/images/3M6A8551cropped.jpg" | relative_url }}" alt="photo" class="experience-img0"  loading="lazy">
+        </div>
+        <p class="photo-credit">Photo Credit: <a href="https://www.instagram.com/shootedshea" target="_blank" rel="noopener">@shootedshea</a></p>
+       </div>
       <div class="experience-text">
         <div class="experience-header">
           <a href="https://www.cornellfashioncollective.org/" class="experience-title" target="_blank">Cornell Fashion Collective Lookbook</a>
