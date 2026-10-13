@@ -12,20 +12,13 @@ permalink: /projects/
   </div>
 
   <div class="gallery-section">
-  <div class="gallery-section">
     <div class="gallery-section-header">
-        <div class="gallery-section-title">Cornell Fashion Collective (Runway)</div> 
+        <div class="gallery-section-title">Updated Digitals</div> 
     <div class="gallery-grid">
-      <figure class="gallery-photo">
-        <img src="{{ "/assets/images/EliBrownCFC-149cropped.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img4" loading="lazy">
-        <figcaption class="photo-credit">Photo Credit: <a href="https://www.instagram.com/elibrownlights" target="_blank" rel="noopener">@elibrownlights</a></figcaption>
-      </figure>
-      <figure class="gallery-photo">
-        <img src="{{ "/assets/images/MRM06887ed.jpg" | relative_url }}" alt="Fashion Collective 2" class="gallery-img4" loading="lazy">
-      </figure>
-      <figure class="gallery-photo">
-        <img src="{{ "/assets/images/1O4A3821cropped.jpg" | relative_url }}" alt="Fashion Collective 3" class="gallery-img4" loading="lazy">
-      </figure>
+      <img src="{{ "/assets/images/MMP_0099.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager">
+      <img src="{{ "/assets/images/0002.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager" style="object-position: center bottom;">
+      <img src="{{ "/assets/images/MMP_0633.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager">
+      <img src="{{ "/assets/images/MMP_0881.jpg" | relative_url }}" alt="photo" class="gallery-img" loading="eager">
     </div>
   </div>
 
@@ -40,13 +33,22 @@ permalink: /projects/
     </div>
   </div>
 
+ 
+  <div class="gallery-section">
   <div class="gallery-section">
     <div class="gallery-section-header">
         <div class="gallery-section-title">Cornell Fashion Collective (Runway)</div> 
     <div class="gallery-grid">
-      <img src="{{ "/assets/images/EliBrownCFC-149cropped.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img4" loading="lazy">
-      <img src="{{ "/assets/images/MRM06887ed.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img4" loading="lazy">
-      <img src="{{ "/assets/images/1O4A3821cropped.jpg" | relative_url }}" alt="Fashion Collective 3" class="gallery-img4" loading="lazy">
+      <figure class="gallery-photo">
+        <img src="{{ "/assets/images/EliBrownCFC-149cropped.jpg" | relative_url }}" alt="Fashion Collective 1" class="gallery-img4" loading="lazy">
+        <figcaption class="photo-credit">Photo Credit: <a href="https://www.instagram.com/HANDLE_1" target="_blank" rel="noopener">@elibrownlights</a></figcaption>
+      </figure>
+      <figure class="gallery-photo">
+        <img src="{{ "/assets/images/MRM06887ed.jpg" | relative_url }}" alt="Fashion Collective 2" class="gallery-img4" loading="lazy">
+      </figure>
+      <figure class="gallery-photo">
+        <img src="{{ "/assets/images/1O4A3821cropped.jpg" | relative_url }}" alt="Fashion Collective 3" class="gallery-img4" loading="lazy">
+      </figure>
     </div>
   </div>
 
