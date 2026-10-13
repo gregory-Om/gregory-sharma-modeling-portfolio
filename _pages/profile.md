@@ -57,7 +57,7 @@ permalink: /profile/
         <div class="stat-item">
           <span class="stat-label">Suit</span>
           <span class="stat-val">38R</span>
-          <span class="stat-metric">48 cm</span>
+          <span class="stat-metric">EU 48</span>
         </div>
         <div class="stat-item">
           <span class="stat-label">Eye</span>
